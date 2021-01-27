@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <a>
+      <a href="index.html">
         <img src="img/logo@3x.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <nav>
@@ -28,12 +28,18 @@
       <section>
         <div>
           <h2>Результаты поиска</h2>
-          <p>Найдено: 3</p>
+          <p>Найдено: <span>3</span></p>
           <p>Сортировка:</p>
           <div>
-            <label><input type="radio" name="sort" value="byPrice" checked><a>По цене</a></label>
-            <label><input type="radio" name="sort" value="byType"><a>По типу</a></label>
-            <label><input type="radio" name="sort" value="byRating"><a>По рейтингу</a></label>
+            <ul>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
+            <ul>
+              <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt=""></a></li>
+              <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt=""></a></li>
+            </ul>
           </div>
         </div>
         <div>
@@ -85,12 +91,8 @@
       <section>
         <h2>Контакты</h2>
         <div>
-          <p>
-            <a href="#">#visitSEDONA</a>
-          </p>
-          <p>
-            ТЕЛ: <a href="tel:+749566601">+7(495) 666-01</a>
-          </p>
+          <a href="#">#visitSEDONA</a>
+          <p>ТЕЛ: <a href="tel:+749566601">+7(495) 666-01</a></p>
         </div>
       </section>
       <section>
