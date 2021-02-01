@@ -79,6 +79,7 @@ body {
 /*Main - .index - Reasons*/
 
 .welcome {
+    background-color: #D3E6F2;
     background-image: url("../img/background_photo.jpg");
     background-repeat: no-repeat;
 }
