@@ -1,0 +1,217 @@
+/*Fonts*/
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans.woff2") format("woff2"),
+         url("../fonts/PTSans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+         url("../fonts/PTSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Variables*/
+
+:root {
+    --bold-text: #000000;
+    --regular-text: #333333;
+    --aclogo-basic: #231F20;
+    --aclogo-focus: #BDBBBC;
+    --basic-blue: #81B3D2;
+    --hover-blue: #669EC0;
+    --active-blue: #5496BD;
+    --basic-white: #ffffff;
+    --basic-beige: #EEEEEE;
+    --basic-brown: #766357;
+    --hover-brown: #604E43;
+    --active-brown: #503E33;
+    --input-background: #F2F2F2;
+}
+
+body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.page a {
+    text-decoration: none;
+    color: var(--bold-text);
+}
+
+/*Header*/
+
+.nav-item a {
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.nav-item a:hover {
+    color: var(--basic-blue);
+}
+
+.nav-item a:active {
+    color: var(--bold-text);
+    opacity: 0.3;
+}
+
+.nav-item a:active {
+    color: var(--basic-brown);
+}
+
+/*Main - .index - Reasons*/
+
+.welcome {
+    background-image: url("../img/background_photo.jpg");
+    background-repeat: no-repeat;
+}
+
+.reasons-intro {
+    line-height: 26px;
+    color: var(--regular-text);
+}
+
+.reasons-intro-bold {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.reasons-list, .life-features-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.reasons-list li {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+  }
+  
+.life-features-list li {
+    background-color: #ffffff;
+    color:var(--regular-text);
+}
+
+.reasons-list li:nth-child(3) {
+    background-color: var(--basic-beige);
+    color:var(--regular-text);
+}
+
+.reasons-list li:nth-child(4) {
+    background-color: var(--basic-beige);
+    color:var(--regular-text);
+}
+  
+.reasons-list li:last-child {
+    background-color: var(--basic-beige);
+    color:var(--regular-text);
+}
+
+.reason-heading {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+/* Main - .index - Hotel Search */
+
+.hotel-search-interested {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.hotel-search-index p {
+    color:var(--regular-text);
+}
+
+.button {
+    background-color:var(--basic-brown);
+    color:var(--basic-white) !important;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.button:hover {
+    background-color:var(--hover-brown);
+}
+
+.button:active {
+    background-color:var(--active-brown);
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+/*Footer*/
+
+.contacts {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color:var(--bold-text);
+}
+
+.social ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.social-icon {
+    width: 46px;
+    height: 48px;
+    background-color:var(--basic-blue);
+}
+
+.twitter {
+    background-image: url("/img/twitter.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.facebook {
+    background-image: url("/img/fb-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.youtube {
+    background-image: url("/img/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-icon:hover {
+    background-color:var(--hover-blue);
+}
+
+.social-icon:active {
+    background-color:var(--active-blue);
+}
+
+.credits-text {
+    line-height: 26px;
+}
+
+.logo-academy:hover {
+    fill: var(--basic-blue);
+}
+
+.logo-academy:active {
+    fill: var(--aclogo-focus);
+}
