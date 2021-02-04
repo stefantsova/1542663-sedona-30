@@ -99,34 +99,24 @@ body {
     padding-left: 0px;
 }
 
-.reasons-list li {
-    background-color: var(--basic-blue);
-    color: var(--basic-white);
-  }
-  
-.life-features-list li {
-    background-color: #ffffff;
-    color:var(--regular-text);
-}
-
-.reasons-list li:nth-child(3) {
-    background-color: var(--basic-beige);
-    color:var(--regular-text);
-}
-
-.reasons-list li:nth-child(4) {
-    background-color: var(--basic-beige);
-    color:var(--regular-text);
-}
-  
-.reasons-list li:last-child {
-    background-color: var(--basic-beige);
-    color:var(--regular-text);
-}
-
 .reason-heading {
     font-size: 21px;
     font-weight: 700;
+}
+
+.reasons-item-blue {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+}
+
+.reasons-item-beige {
+    background-color: var(--basic-beige);
+    color:var(--regular-text);
+}
+
+.life-features-list li {
+    background-color: #ffffff;
+    color:var(--regular-text);
 }
 
 /* Main - .index - Hotel Search */
@@ -141,21 +131,21 @@ body {
     color:var(--regular-text);
 }
 
-.button {
+.hotel-search-index .button {
     background-color:var(--basic-brown);
-    color:var(--basic-white) !important;
+    color:var(--basic-white);
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
 }
 
-.button:hover {
+.hotel-search-index .button:hover {
     background-color:var(--hover-brown);
 }
 
-.button:active {
+.hotel-search-index .button:active {
     background-color:var(--active-brown);
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -180,19 +170,19 @@ body {
 }
 
 .twitter {
-    background-image: url("/img/twitter.svg");
+    background-image: url("../img/twitter.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .facebook {
-    background-image: url("/img/fb-icon.svg");
+    background-image: url("../img/fb-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .youtube {
-    background-image: url("/img/youtube.svg");
+    background-image: url("../img/youtube.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -203,6 +193,18 @@ body {
 
 .social-icon:active {
     background-color:var(--active-blue);
+}
+
+.twitter:active {
+    background-image: url("../img/twitter_opac.svg");
+}
+
+.facebook:active {
+    background-image: url("../img/fb-icon_opac.svg");
+}
+
+.youtube:active {
+    background-image: url("../img/youtube_opac.svg");
 }
 
 .credits-text {
