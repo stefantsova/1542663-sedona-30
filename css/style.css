@@ -42,6 +42,8 @@ body {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -100,6 +102,60 @@ body {
 .reasons-list, .life-features-list {
     list-style: none;
     padding-left: 0px;
+}
+
+.reasons-all {
+    max-width: 1200px;
+}
+
+.reasons-list {
+    display: grid;
+    grid-template-rows: 586px 256px 256px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas: 
+      "a a a"
+      "b b b"
+      "c d e";
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.reason-one {
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 400px 800px;
+  }
+
+.reason-text {
+    align-self: center;
+}
+
+.life-features-list {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    height: 330px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.reason-two {
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 800px 400px;
+}
+
+
+.reason-3 {
+    grid-area: c;
+}
+  
+.reason-4 {
+    grid-area: d;
+}
+  
+.reason-5 {
+    grid-area: e;
 }
 
 .reason-heading {
@@ -222,7 +278,7 @@ body {
     fill:var(--aclogo-focus);
 }
 
-/* Main - .hotels - Search results*/
+/* Main - .hotels - Search results */
 
 .search-results ul {
     list-style: none;
