@@ -128,6 +128,7 @@ body {
   }
 
 .reason-text {
+    text-align: center;
     align-self: center;
 }
 
@@ -280,6 +281,52 @@ body {
 
 /* Main - .hotels - Search results */
 
+.hotels-main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+
+.search-form-hotels form {
+    grid-area: a;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    height: 217px;
+    background-image: url("../img/background_search.jpg");
+    background-repeat: no-repeat;
+    color:#ffffff;
+    font-size: 16px;
+}
+
+.search-criteria p {
+    font-weight: 700;
+}
+
+.search-criteria table {
+    border: 1px solid white;
+}
+
+.sort {
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 270px auto;
+}
+
+.hotels-list {
+    grid-area: c;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.hotel-item {
+    display: grid;
+    grid-template-columns: auto min-content;
+}
+
 .search-results ul {
     list-style: none;
     padding-left: 0px;
@@ -337,13 +384,6 @@ body {
 
 .sorting-arrows-list a:active .sorting-arrow {
     fill:var(--basic-blue);
-}
-
-.search-form-hotels form {
-    width: 1200px;
-    height: 217px;
-    background-image: url("../img/background_search.jpg");
-    background-repeat: no-repeat;
 }
 
 .search-results .button {
