@@ -61,21 +61,56 @@ body {
 
 /*Header*/
 
-.nav-item a {
+.main-header {
+    display: grid;
+    position: relative;
+    height: 55px;
+}
+
+.sedona-logo {
+    position: absolute;
+    left: 530px;
+    z-index: 2;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.menu-info {
+    margin-left: 73px;
+}
+
+.menu-photo {
+    margin-left: 135px; 
+}
+
+.menu-map {
+    margin-left: 420px;
+}
+
+.menu-hotels {
+    margin-left: 148px;
+}
+
+.menu-item a {
     line-height: 26px;
     font-weight: 700;
 }
 
-.nav-item a:hover,
+.menu-item a:hover,
 .hotel-name a:hover {
     color: var(--basic-blue);
 }
 
-.nav-item a:focus {
+.menu-item a:focus {
     color: var(--basic-brown);
 }
 
-.nav-item a:active,
+.menu-item a:active,
 .hotel-name a:active {
     color: var(--bold-text);
     opacity: 0.3;
@@ -84,14 +119,24 @@ body {
 /*Main - .index - Reasons*/
 
 .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 509px;
     background-color: #D3E6F2;
     background-image: url("../img/background_photo.jpg");
     background-repeat: no-repeat;
 }
 
 .reasons-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 216px;
     line-height: 26px;
     color: var(--regular-text);
+    text-align: center;
 }
 
 .reasons-intro-bold {
@@ -127,11 +172,6 @@ body {
     grid-template-columns: 400px 800px;
   }
 
-.reason-text {
-    text-align: center;
-    align-self: center;
-}
-
 .life-features-list {
     display: grid;
     grid-template-columns: 400px 400px 400px;
@@ -145,7 +185,6 @@ body {
     display: grid;
     grid-template-columns: 800px 400px;
 }
-
 
 .reason-3 {
     grid-area: c;
@@ -179,12 +218,61 @@ body {
     color:var(--regular-text);
 }
 
+.life-feature {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.reason-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.reason-text p,
+.life-feature-text {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 /* Main - .index - Hotel Search */
 
+.hotel-search-index {
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+}
+
 .hotel-search-interested {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 58px;
+    text-align: center;
+}
+
+.interested-heading {
     font-size: 30px;
     line-height: 24px;
     font-weight: 700;
+}
+
+.interested-text {
+    margin-bottom: 50px;
+}
+.button-search-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 86px;
+  width: 568px;
+  font-size: 21px;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--light-brown);
 }
 
 .hotel-search-index p {
@@ -211,13 +299,28 @@ body {
 
 /*Footer*/
 
+.footer {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    height: 120px;
+}
+
 .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
     color:var(--bold-text);
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .social ul {
     list-style: none;
     padding-left: 0px;
@@ -230,12 +333,14 @@ body {
 }
 
 .twitter {
+    margin-right: 6px;
     background-image: url("../img/twitter.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .facebook {
+    margin-right: 6px;
     background-image: url("../img/fb-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -267,7 +372,14 @@ body {
     background-image: url("../img/youtube_opac.svg");
 }
 
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .credits-text {
+    margin-right: 8px;
     line-height: 26px;
 }
 

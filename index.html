@@ -10,15 +10,15 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a>
+      <a class="sedona-logo">
         <img src="img/logo@3x.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="blank.html">Информация</a></li>
-          <li class="nav-item"><a href="blank.html">Фото и видео</a></li>
-          <li class="nav-item"><a href="blank.html">Карта штата</a></li>
-          <li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item menu-info"><a href="blank.html">Информация</a></li>
+          <li class="menu-item menu-photo"><a href="blank.html">Фото и видео</a></li>
+          <li class="menu-item menu-map"><a href="blank.html">Карта штата</a></li>
+          <li class="menu-item menu-hotels"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -41,24 +41,34 @@
               <div class="reason-text">
                 <p class="reason-heading">Настоящий городок</p>
                 <p>— №1 —</p>
-                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                <p>Седона - не аттракцион для туристов, там 
+                  течёт своя жизнь</p>
               </div>
               <img src="img/open_range.jpg" width="800" height="256" alt="Гриль-ресторан Open Range">
               <ul class="life-features-list">
-                <li class="life-feature"> 
+                <li class="life-feature">
                   <img src="img/icon-house.svg" alt="Иконка: дом">
+                  <div class="life-feature-text">
                   <h3>Жильё</h3>
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <p>Рекомендуем пожить в настоящем
+                    мотеле, всё как в кино!</p>
+                  </div>
                 </li>
                 <li class="life-feature">
                   <img src="img/icon-burger.svg" alt="Иконка: бургер">
+                  <div class="life-feature-text">
                   <h3>Еда</h3>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p>Всегда заказывайте фирменный бургер,
+                    вы не разочаруетесь!</p>
+                  </div>
                 </li>
                 <li class="life-feature">
                   <img src="img/icon-gift.svg" alt="Иконка: сувениры">
+                  <div class="life-feature-text">
                   <h3>Сувениры</h3>
-                  <p>Не только китайского, но и местного производства!</p>
+                  <p>Не только китайского, но и местного
+                    производства!</p>
+                  </div>
                 </li>
               </ul>
             </li>
@@ -67,23 +77,33 @@
               <div class="reason-text">
                 <p class="reason-heading">Там есть Мост дьявола</p>
                 <p>— №2 —</p>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <p>Да, по нему можно пройти! Если конечно
+                  вы осмелитесь</p>
               </div>
             </li>
             <li class="reasons-item reasons-item-beige reason-three">
-              <p class="reason-heading">Небольшая площадь</p>
-              <p>— №3 —</p>
-              <p>Все достопримечательности находятся очень близко</p>
+              <div class="reason-text">
+                <p class="reason-heading">Небольшая площадь</p>
+                <p>— №3 —</p>
+                <p>Все достопримечательности
+                  находятся очень близко</p>
+              </div>
             </li>
             <li class="reasons-item reasons-item-beige reason-four">
-              <p class="reason-heading">Красивая дорога</p>
-              <p>— №4 —</p>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <div class="reason-text">
+                <p class="reason-heading">Красивая дорога</p>
+                <p>— №4 —</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем
+                  не скучно!</p>
+              </div>
             </li>
             <li class="reasons-item reasons-item-beige reason-five">
-              <p class="reason-heading">Мало туристов</p>
-              <p>— №5 —</p>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+              <div class="reason-text">
+                <p class="reason-heading">Мало туристов</p>
+                <p>— №5 —</p>
+                <p>Большинство едет в Гранд Каньон
+                  и толпится там</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -91,13 +111,15 @@
       <section class="hotel-search-index">
         <div>
           <h2 class="visually-hidden">Быстрый поиск гостиниц в Седоне</h2>
-          <p class="hotel-search-interested">Заинтересовались?</p>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="hotel-search-interested">
+            <p class="interested-heading">Заинтересовались?</p>
+            <p class="interested-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <div>
+              <a href="#" class="button button-search-index">Поиск гостиницы в Седоне</a>
+            </div>
+          </div>
         </div>
         <div>
-          <div>
-            <a href="#" class="button button-search-index">Поиск гостиницы в Седоне</a>
-          </div>
           <!--
           <form >
             <label for="arrival-date">Дата заезда:</label>
@@ -121,6 +143,8 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div>
           <a href="#">#visitSEDONA</a>
+        </div>
+        <div>
           <p>
             ТЕЛ: <a href="tel:+749566601">+7(495) 666-01</a>
           </p>
@@ -128,26 +152,24 @@
       </section>
       <section class="social">
         <h2 class="visually-hidden">Соцсети</h2>
-        <ul>
-          <li>
+        <div>
             <a href="#">
               <div class="social-icon twitter">
               </div>
             </a>
-          </li>
-          <li>
+        </div>
+        <div>
             <a href="#">
               <div class="social-icon facebook">
               </div>
             </a>
-          </li>
-          <li>
+         </div>
+         <div>
             <a href="#">
               <div class="social-icon youtube">
               </div>
             </a>
-          </li>
-        </ul>
+          </div>
       </section>
       <section class="credits">
         <h2 class="visually-hidden">Разработчик</h2>
