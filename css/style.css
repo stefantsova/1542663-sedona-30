@@ -36,6 +36,7 @@
 }
 
 body {
+    position: relative;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -44,6 +45,7 @@ body {
     text-transform: uppercase;
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 0px 0px 10px #888888;
 }
 
 .visually-hidden {
@@ -64,7 +66,8 @@ body {
 .main-header {
     display: grid;
     position: relative;
-    height: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .sedona-logo {
@@ -77,6 +80,7 @@ body {
     display: flex;
     list-style: none;
     padding: 0;
+    margin: 0;
     z-index: 1;
 }
 
@@ -116,41 +120,67 @@ body {
     opacity: 0.3;
 }
 
-/*Main - .index - Reasons*/
+/*Index - Main content - Reasons*/
 
 .welcome {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 509px;
+    padding-top: 79px;
+    padding-bottom: 79px;
     background-color: #D3E6F2;
-    background-image: url("../img/background_photo.jpg");
+    background-image: url("../img/background_main.jpg");
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.shape {
+    position: absolute;
+    bottom: 0px;
 }
 
 .reasons-intro {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    height: 216px;
-    line-height: 26px;
-    color: var(--regular-text);
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 .reasons-intro-bold {
+    width: 470px;
+    padding-bottom: 28px;
+    margin-top: 42px;
+    margin-bottom: 0;
     font-size: 21px;
     font-weight: 700;
+    line-height: 26px;
+    color: var(--bold-text);
 }
 
-.reasons-list, .life-features-list {
+.reasons-intro-regular {
+    width: 519px;
+    margin-top: 16px;
+    margin-bottom: 52px;
+    line-height: 26px;
+    color: var(--regular-text);
+}
+
+.reasons-list, 
+.life-features-list {
     list-style: none;
     padding-left: 0px;
 }
 
-.reasons-all {
-    max-width: 1200px;
+.reason-heading,
+.life-reason-heading {
+    height: 43px;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.reason-heading {
+    margin-top: 47px;
 }
 
 .reasons-list {
@@ -164,13 +194,14 @@ body {
     list-style: none;
     margin: 0;
     padding-left: 0;
+    text-align: center;
 }
 
 .reason-one {
     grid-area: a;
     display: grid;
     grid-template-columns: 400px 800px;
-  }
+}
 
 .life-features-list {
     display: grid;
@@ -178,6 +209,20 @@ body {
     height: 330px;
     list-style: none;
     padding-left: 0;
+}
+
+.life-features-list li {
+    background-color: #ffffff;
+    color:var(--regular-text);
+}
+
+.icon-house,
+.icon-burger {
+    margin-top: 60px;
+}
+
+.icon-gift {
+    margin-top: 53px;
 }
 
 .reason-two {
@@ -198,11 +243,6 @@ body {
     grid-area: e;
 }
 
-.reason-heading {
-    font-size: 21px;
-    font-weight: 700;
-}
-
 .reasons-item-blue {
     background-color: var(--basic-blue);
     color: var(--basic-white);
@@ -213,56 +253,32 @@ body {
     color:var(--regular-text);
 }
 
-.life-features-list li {
-    background-color: #ffffff;
-    color:var(--regular-text);
-}
-
-.life-feature {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.reason-text {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.reason-text p,
-.life-feature-text {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-}
-
-/* Main - .index - Hotel Search */
+/*Index - Main content - Hotel Search */
 
 .hotel-search-index {
     display: flex;
     flex-direction: column;
-    height: 390px;
-}
-
-.hotel-search-interested {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-top: 58px;
     text-align: center;
 }
 
 .interested-heading {
+    margin-top: 58px;
+    margin-bottom: 0;
     font-size: 30px;
     line-height: 24px;
     font-weight: 700;
 }
 
 .interested-text {
-    margin-bottom: 50px;
+    width: 435px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 27px;
+    line-height: 24px;
 }
+
 .button-search-index {
   display: flex;
   justify-content: center;
@@ -280,11 +296,12 @@ body {
 }
 
 .hotel-search-index .button {
-    background-color:var(--basic-brown);
-    color:var(--basic-white);
+    margin-top: 24px;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    background-color:var(--basic-brown);
+    color:var(--basic-white);
 }
 
 .hotel-search-index .button:hover {
@@ -296,13 +313,16 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-
 /*Footer*/
 
 .footer {
+    position: absolute;
+    bottom: 0px;
     display: grid;
     grid-template-columns: 400px 400px 400px;
     height: 120px;
+    background-color: #ffffff;
+    opacity: 0.9;
 }
 
 .contacts {
@@ -310,19 +330,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
     color:var(--bold-text);
 }
 
-.social {
+.hashtag-link {
+    width: 166px;
+    margin-top: 23px;
+    margin-bottom: 0;
+}
+
+.phone-number {
+    width: 251px;
+    margin-top: 9px;
+    margin-bottom: 36px;
+}
+
+.social-list {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.social ul {
     list-style: none;
+    margin-top: 36px;
     padding-left: 0px;
 }
 
@@ -379,8 +411,16 @@ body {
 }
 
 .credits-text {
+    width: 74px;
+    margin: 0;
     margin-right: 8px;
     line-height: 26px;
+}
+
+.credits a {
+    width: 115px;
+    height: 41px;
+    margin-right: 138px;
 }
 
 .credits a:hover .logo-academy {
