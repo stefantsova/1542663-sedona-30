@@ -10,7 +10,7 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a class="sedona-logo">
+      <a class="sedona-logo" href="index.html">
         <img src="img/logo@3x.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <nav class="menu">
@@ -25,35 +25,47 @@
     <main class="hotels-main">
       <section class="search-form-hotels">
         <h2 class="visually-hidden">Форма поиска</h2>
-        <form class="search-criteria">
-          <div>
-            <p>ИНФРАСТРУКТУРА:</p>
-            <input type="checkbox" name="infra" id="swimming_pool" value="swimming_pool" checked>
-            <label for="swimming_pool">БАССЕЙН</label><br>
-            <input type="checkbox" name="infra" id="parking" value="parking">
-            <label for="parking">ПАРКОВКА</label><br>
-            <input type="checkbox" name="infra" id="wifi" value="wifi">
-            <label for="wifi">WI-FI</label><br>
-          </div>
-          <div>
-            <p>ТИП ЖИЛЬЯ</p>
-            <input type="checkbox" name="housing-type" id="hotel" value="hotel" checked>
-            <label for="hotel">ГОСТИНИЦА</label><br>
-            <input type="checkbox" name="housing-type" id="motel" value="motel" checked>
-            <label for="motel">МОТЕЛЬ</label><br>
-            <input type="checkbox" name="housing-type" id="appartments" value="appartments" checked>
-            <label for="appartments">АПАРТАМЕНТЫ</label><br>
-          </div>
-          <div>
-            <p>СТОИМОСТЬ В СУТКИ (Р):</p>
-            <table>
-              <tr>
-              <td>ОТ 0</td>
-              <td>ДО 3000</td>
-              </tr>
-            </table>
-            <input id="price" name="price" type="range" min="0" max="3000" step="50">
-          </div>
+        <form class="search-criteria" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item infrastructure">
+            <legend>ИНФРАСТРУКТУРА:</legend>
+            <div class="infrastructure-filter">
+              <input type="checkbox" name="infra" id="swimming_pool" value="swimming_pool" checked>
+              <label for="swimming_pool" class="checker"><span class="label-text">БАССЕЙН</span></label><br>
+              <input type="checkbox" name="infra" id="parking" value="parking">
+              <label for="parking" class="checker"><span class="label-text">ПАРКОВКА</span></label><br>
+              <input type="checkbox" name="infra" id="wifi" value="wifi">
+              <label for="wifi" class="checker"><span class="label-text">WI-FI</span></label><br>
+            </div>
+          </fieldset>
+          <fieldset class="filter-item housing">
+            <legend>ТИП ЖИЛЬЯ</legend>
+              <div class="housing-type-filter">
+                <input type="checkbox" name="housing-type" id="hotel" value="hotel" checked>
+                <label for="hotel" class="checker"><span class="label-text">ГОСТИНИЦА</span></label><br>
+                <input type="checkbox" name="housing-type" id="motel" value="motel" checked>
+                <label for="motel" class="checker"><span class="label-text">МОТЕЛЬ</span></label><br>
+                <input type="checkbox" name="housing-type" id="appartments" value="appartments" checked>
+                <label for="appartments" class="checker"><span class="label-text">АПАРТАМЕНТЫ</span></label><br>
+              </div>
+          </fieldset>
+          <fieldset class="filter-item price">
+            <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+            <div class="range-filter">
+              <div class="price-controls">
+                <p class="price-controls-text from">ОТ 0</p>
+                <div class="rectangle"></div>
+                <p class="price-controls-text to">ДО 3000</p>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                    <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            </div>
+            <input type="submit" value="ПОКАЗАТЬ">
+          </fieldset>
         </form>
       </section>
       <section class="search-results-sorting">
@@ -95,6 +107,7 @@
               </div>
             <div>
                 <div class="stars stars-amara">
+                  <p class="visually-hidden">Четырехзвездочный отель</p>
                 </div>
                 <div>
                   <p class="rating">Рейтинг: <span>8,5</span></p>
@@ -116,6 +129,7 @@
             </div>
             <div>
               <div class="stars stars-desert">
+                <p class="visually-hidden">Трехзвездочный отель</p>
               </div>
               <div>
                 <p class="rating">Рейтинг: <span>8,9</span></p>
@@ -137,6 +151,7 @@
             </div>
             <div>
               <div class="stars stars-villas">
+                <p class="visually-hidden">Двухзвездочный отель</p>
               </div>
               <div>
                 <p class="rating">Рейтинг: <span>9,2</span></p>
