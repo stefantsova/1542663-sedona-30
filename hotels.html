@@ -28,25 +28,37 @@
         <form class="search-criteria" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item infrastructure">
             <legend>ИНФРАСТРУКТУРА:</legend>
-            <div class="infrastructure-filter">
-              <input type="checkbox" name="infra" id="swimming_pool" value="swimming_pool" checked>
-              <label for="swimming_pool" class="checker"><span class="label-text">БАССЕЙН</span></label><br>
-              <input type="checkbox" name="infra" id="parking" value="parking">
-              <label for="parking" class="checker"><span class="label-text">ПАРКОВКА</span></label><br>
-              <input type="checkbox" name="infra" id="wifi" value="wifi">
-              <label for="wifi" class="checker"><span class="label-text">WI-FI</span></label><br>
-            </div>
+            <ul class="infrastructure-filter">
+              <li>
+                <input type="checkbox" name="infra" id="swimming_pool" value="swimming_pool" checked>
+                <label for="swimming_pool" class="checker label-swimming-pool"><span class="label-text">БАССЕЙН</span></label>
+              </li>
+              <li>
+                <input type="checkbox" name="infra" id="parking" value="parking">
+                <label for="parking" class="checker label-parking"><span class="label-text">ПАРКОВКА</span></label>
+              </li>
+              <li>
+                <input type="checkbox" name="infra" id="wifi" value="wifi">
+                <label for="wifi" class="checker label-wifi"><span class="label-text">WI-FI</span></label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter-item housing">
             <legend>ТИП ЖИЛЬЯ</legend>
-              <div class="housing-type-filter">
-                <input type="checkbox" name="housing-type" id="hotel" value="hotel" checked>
-                <label for="hotel" class="checker"><span class="label-text">ГОСТИНИЦА</span></label><br>
-                <input type="checkbox" name="housing-type" id="motel" value="motel" checked>
-                <label for="motel" class="checker"><span class="label-text">МОТЕЛЬ</span></label><br>
-                <input type="checkbox" name="housing-type" id="appartments" value="appartments" checked>
-                <label for="appartments" class="checker"><span class="label-text">АПАРТАМЕНТЫ</span></label><br>
-              </div>
+              <ul class="housing-type-filter">
+                <li>
+                  <input type="checkbox" name="housing-type" id="hotel" value="hotel" checked>
+                  <label for="hotel" class="checker label-hotel"><span class="label-text">ГОСТИНИЦА</span></label>
+                </li>
+                <li>
+                  <input type="checkbox" name="housing-type" id="motel" value="motel" checked>
+                  <label for="motel" class="checker label-motel"><span class="label-text">МОТЕЛЬ</span></label>
+                </li>
+                <li>
+                  <input type="checkbox" name="housing-type" id="appartments" value="appartments" checked>
+                  <label for="appartments" class="checker label-appartments"><span class="label-text">АПАРТАМЕНТЫ</span></label>
+                </li>
+              </ul>
           </fieldset>
           <fieldset class="filter-item price">
             <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
@@ -74,7 +86,7 @@
             <p>Найдено: <span>3</span></p>
           </div>
           <div class="sorting-part-two">
-            <p class="sorting-label">Сортировка:</p>
+            <p class="sort-by">Сортировка:</p>
             <ul class="sorting-criteria">
             <li class="sorting-criteria-item sort-by-price"><a href="#">По цене</a></li>
             <li class="sorting-criteria-item sort-by-type"><a href="#">По типу</a></li>
@@ -166,7 +178,7 @@
         <h2 class="visually-hidden">Контакты</h2>
           <a class="hashtag-link" href="#">#visitSEDONA</a>
           <p class="phone-number">
-            ТЕЛ: <a href="tel:+749566601">+7(495) 666-01</a>
+            ТЕЛ: <a href="tel:+749566601">+7(495) 666-01-66</a>
           </p>
       </section>
       <section class="social">
@@ -200,5 +212,9 @@
           </svg></a>
       </section>
     </footer>
+    <div class="decorative-line decorative-line-one"></div>
+    <div class="decorative-line decorative-line-two"></div>
+    <div class="decorative-line decorative-line-three"></div>
+    <div class="decorative-line decorative-line-four"></div>
   </body>
 </html>

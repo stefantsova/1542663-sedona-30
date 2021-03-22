@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="sedona-logo">
+      <a href="#" class="sedona-logo">
         <img src="img/logo@3x.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <nav class="menu">
@@ -26,7 +26,7 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <section class="welcome">
           <img src="img/welcome.svg" width="456" height="350" alt="Картинка-текст со словами Добро пожаловать в Седону">
-          <img src="img/shape.png" width="1200" height="57" class="shape">
+          <img src="img/shape.png" width="1200" height="57" class="shape" alt="Декоративная фигура">
       </section>
       <section class="reasons">
         <h2 class="visually-hidden">5 причин посетить Седону</h2>
@@ -38,29 +38,29 @@
         <div>
           <ul class="reasons-list">
             <li class="reasons-item reasons-item-blue reason-one">
-              <div class="reason-text">
+              <div>
                 <h3 class="reason-heading">Настоящий<br>городок</h3>
-                <p>— №1 —</p>
-                <p class="reason-one-details">Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
+                <p class="reason-number">— №1 —</p>
+                <p class="reason-details">Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
               </div>
               <img src="img/open_range.jpg" width="800" height="256" alt="Гриль-ресторан Open Range">
               <ul class="life-features-list">
                 <li class="life-feature">
                   <img src="img/icon-house.svg" alt="Иконка: дом" class="icon-house">
-                  <h3 class="life-reason-heading">Жильё</h3>
-                  <p>Рекомендуем пожить в настоящем<br>
+                  <h3 class="life-feature-heading">Жильё</h3>
+                  <p class="life-feature-details">Рекомендуем пожить в настоящем<br>
                     мотеле, всё как в кино!</p>
                 </li>
                 <li class="life-feature">
                   <img src="img/icon-burger.svg" alt="Иконка: бургер" class="icon-burger"> 
-                  <h3 class="life-reason-heading">Еда</h3>
-                  <p>Всегда заказывайте фирменный бургер,<br>
+                  <h3 class="life-feature-heading">Еда</h3>
+                  <p class="life-feature-details">Всегда заказывайте фирменный бургер,<br>
                     вы не разочаруетесь!</p>
                 </li>
                 <li class="life-feature">
                   <img src="img/icon-gift.svg" alt="Иконка: сувениры" class="icon-gift">
-                  <h3 class="life-reason-heading">Сувениры</h3>
-                  <p>Не только китайского, но и местного<br>
+                  <h3 class="life-feature-heading">Сувениры</h3>
+                  <p class="life-feature-details">Не только китайского, но и местного<br>
                     производства!</p>
                 </li>
               </ul>
@@ -69,24 +69,24 @@
               <img src="img/diablo_bridge.jpg" width="800" height="256" alt="Мост Дьявола">
               <div class="reason-text">
                 <h3 class="reason-heading">Там есть<br>Мост дьявола</h3>
-                <p>— №2 —</p>
-                <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+                <p class="reason-number">— №2 —</p>
+                <p class="reason-details">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
               </div>
             </li>
             <li class="reasons-item reasons-item-beige reason-three">
-                <h3 class="reason-heading">Небольшая площадь</h3>
-                <p>— №3 —</p>
-                <p>Все достопримечательности<br>находятся очень близко</p>
+                <h3 class="reason-heading">Небольшая<br>площадь</h3>
+                <p class="reason-number">— №3 —</p>
+                <p class="reason-details">Все достопримечательности<br>находятся очень близко</p>
             </li>
             <li class="reasons-item reasons-item-beige reason-four">
-                <h3 class="reason-heading">Красивая дорога</h3>
-                <p>— №4 —</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+                <h3 class="reason-heading">Красивая<br>дорога</h3>
+                <p class="reason-number">— №4 —</p>
+                <p class="reason-details">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
             </li>
             <li class="reasons-item reasons-item-beige reason-five">
-                <h3 class="reason-heading">Мало туристов</h3>
-                <p>— №5 —</p>
-                <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
+                <h3 class="reason-heading">Мало<br>туристов</h3>
+                <p class="reason-number">— №5 —</p>
+                <p class="reason-details">Большинство едет в Гранд Каньон<br>и толпится там</p>
             </li>
           </ul>
         </div>
@@ -107,7 +107,7 @@
             <input id="departure-date" type="date" name="name" value="2017-07-04">
           </fieldset>
           <fieldset class="guest-field">
-            <label for="adults">Взрослые:</label>
+            <label class="adults-label" for="adults">Взрослые:</label>
             <input id="adults" type="number" name="name" min="1" max="3" value="2">
             <label class="kids-label" for="kids">Дети:</label>
             <input id="kids" type="number" name="name" min="1" max="3" value="1">
@@ -121,7 +121,7 @@
         <h2 class="visually-hidden">Контакты</h2>
           <a class="hashtag-link" href="#">#visitSEDONA</a>
           <p class="phone-number">
-            ТЕЛ: <a href="tel:+749566601">+7(495) 666-01</a>
+            ТЕЛ: <a href="tel:+749566601">+7(495) 666-01-66</a>
           </p>
       </section>
       <section class="social">
