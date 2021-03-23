@@ -32,6 +32,8 @@
     --hover-brown: #604E43;
     --active-brown: #503E33;
     --input-background: #F2F2F2;
+    --input-hover: #EBEBEB;
+    --input-focus: #E5E5E5;
     --arrow-still: #CACACA;
 }
 
@@ -135,6 +137,7 @@ body {
 /*Index - Main content - Reasons*/
 
 .welcome {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +146,6 @@ body {
     background-color: #D3E6F2;
     background-image: url("../img/background_main.jpg");
     background-repeat: no-repeat;
-    position: relative;
 }
 
 .shape {
@@ -160,9 +162,9 @@ body {
 
 .reasons-intro-bold {
     width: 470px;
-    padding-bottom: 28px;
     margin-top: 42px;
     margin-bottom: 0;
+    padding-bottom: 28px;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -227,8 +229,8 @@ body {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     height: 330px;
-    list-style: none;
     padding-left: 0;
+    list-style: none;
 }
 
 .life-features-list li {
@@ -292,8 +294,8 @@ body {
     margin-bottom: 0;
     margin-left: 446px;
     font-size: 30px;
-    line-height: 24px;
     font-weight: 700;
+    line-height: 24px;
 }
 
 .interested-text {
@@ -309,9 +311,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 86px;
   width: 568px;
-  font-size: 21px;
+  height: 86px;
   margin-top: 24px;
   margin-left: 316px;
   font-size: 21px;
@@ -338,6 +339,10 @@ body {
 }
 
 .index-search-form {
+    position: absolute;
+    left: 316px;
+    top: 2169px;
+    z-index: 2;  
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -347,10 +352,6 @@ body {
     line-height: 26px; 
     text-align: start;
     background-color: var(--basic-white);
-    position: absolute;
-    left: 316px;
-    top: 2169px;
-    z-index: 2;  
 }
 
 .index-search-form fieldset {
@@ -398,6 +399,16 @@ body {
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
     border: none;
+}
+
+.index-search-form .calendar-arrival:hover,
+.index-search-form .calendar-departure:hover {
+    background-image: url("../img/calendar_hover.svg");
+}
+
+.index-search-form .calendar-arrival:active,
+.index-search-form .calendar-departure:active {
+    background-image: url("../img/calendar_active.svg");
 }
 
 .arrival label,
@@ -468,6 +479,26 @@ body {
     border: none;
 }
 
+.index-search-form .adults-less:hover,
+.index-search-form .kids-less:hover {
+    background-image: url("../img/minus_hover.svg");
+}
+
+.index-search-form .kids-more:hover,
+.index-search-form .adults-more:hover {
+    background-image: url("../img/plus_hover.svg");
+}
+
+.index-search-form .adults-less:active,
+.index-search-form .kids-less:active {
+    background-image: url("../img/minus_active.svg");
+}
+
+.index-search-form .kids-more:active,
+.index-search-form .adults-more:active {
+    background-image: url("../img/plus_active.svg");
+}
+
 .guest-field label {
     margin-top: 36px;
     margin-left: 55px;
@@ -490,6 +521,15 @@ body {
   margin: 0;
 }
 
+.index-search-form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.index-search-form input[type="number"]:hover,
+.index-search-form input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
 .guest-field .adults-label {
     padding-right: 38px;
 }
@@ -498,6 +538,16 @@ body {
     margin-left: 53px;
     padding-right: 25px;
 } 
+
+.index-search-form input[type="number"]:hover,
+.index-search-form input[type="text"]:hover {
+    background-color: var(--input-hover);
+}
+
+.index-search-form input[type="number"]:focus,
+.index-search-form input[type="text"]:focus {
+    background-color: var(--basic-white);
+}
 
 .index-search-form input[type="submit"] {
     width: 458px;
@@ -508,8 +558,8 @@ body {
     font-size:21px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--basic-white);
     background-color: var(--basic-blue);
+    color: var(--basic-white);
     border: none;
 }  
 
@@ -679,10 +729,10 @@ body {
 }
 
 .checker {
-    background-image: url("../img/checkbox-off.png");
-    background-size: auto 100%;
     width: 23px;
     height: 23px;
+    background-image: url("../img/checkbox-off.png");
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
@@ -717,8 +767,8 @@ body {
 
 .infrastructure-filter,
 .housing-type-filter {
-    padding: 0;
     margin-top: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -733,26 +783,26 @@ body {
 }
 
 .search-criteria input[type="checkbox"]:checked + .checker {
-    background-image: url("../img/checkbox-on.png");
-    background-size: auto 100%;
     width: 23px;
     height: 23px;
+    background-image: url("../img/checkbox-on.png");
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
 .search-criteria input[type="checkbox"]:disabled + .checker {
-    background-image: url("../img/checkbox-disabled.png");
-    background-size: auto 100%;
     width: 23px;
     height: 23px;
+    background-image: url("../img/checkbox-disabled.png");
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
 .search-criteria input[type="checkbox"]:checked:disabled + .checker {
-    background-image: url("../img/checkbox-on-disabled.png");
-    background-size: auto 100%;
     width: 23px;
     height: 23px;
+    background-image: url("../img/checkbox-on-disabled.png");
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
@@ -766,8 +816,8 @@ body {
     align-items: center;
     width: 313px;
     height: 36px;
-    padding: 0;
     margin-top: 10.5px;
+    padding: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -785,6 +835,16 @@ body {
     color: #ffffff;
     border: none;
 }
+
+.price-controls input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.price-controls input[type="number"]:hover,
+.price-controls input[type="number"]:focus {
+  -moz-appearance: number-input;
+} 
+
 .price-controls .label-price-from {
     margin-left: 65px;
 }
@@ -812,17 +872,17 @@ body {
 }
   
 .range-controls .scale {
-    width: 316px;
+    width: 256px;
     height: 2px;
-    background: #ffffff;
-    opacity: 0.3;
+    background-color: #ffffff;
+    opacity: 1;
 }
 
 .range-controls .bar {
-    width: 70%;
+    width: 316px;
     height: 2px;
-    background: #ffffff;
-    opacity: 1;
+    background-color: #ffffff;
+    opacity: 0.3;
 }
 
 .range-controls .toggle {
@@ -851,9 +911,9 @@ body {
 
 .search-criteria input[type=submit] {
     width: 137px;
-    padding: 5px 34px;
     margin-top: 33px;
     margin-left: 85px;
+    padding: 5px 34px;
     background: rgba(255, 255, 255, 0);
     font-size: 14px;
     line-height: 21px;
