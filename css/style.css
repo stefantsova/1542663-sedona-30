@@ -360,11 +360,43 @@ body {
 }
 
 .date-field input {
-    width: 331px;
+    width: 329px;
     height: 38px;
     padding-left: 15px;
+    font-weight: 700;
     line-height: 26px;
+    text-transform: uppercase;
     background-color: var(--basic-beige);
+    border: none;
+}
+
+.arrival {
+    position: relative;
+}
+
+.index-search-form .calendar-arrival {
+    position: absolute;
+    left: 487px;
+    bottom: 8px;
+    width: 21px;
+    height: 23px;
+    background-image: url("../img/calendar.svg");
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.departure {
+    position: relative;
+}
+
+.index-search-form .calendar-departure {
+    position: absolute;
+    left: 487px;
+    bottom: 8px;
+    width: 21px;
+    height: 23px;
+    background-image: url("../img/calendar.svg");
+    background-repeat: no-repeat;
     border: none;
 }
 
@@ -384,7 +416,56 @@ body {
 }
 
 .guest-field {
+    position: relative;
     display: flex;
+}
+
+.index-search-form .adults-less {
+    position: absolute;
+    left: 167px;
+    bottom: 0px;
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/minus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.index-search-form .adults-more {
+    position: absolute;
+    left: 243px;
+    bottom: 0px;
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.index-search-form .kids-less {
+    position: absolute;
+    left: 399px;
+    bottom: 0px;
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/minus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.index-search-form .kids-more {
+    position: absolute;
+    left: 475px;
+    bottom: 0px;
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
 }
 
 .guest-field label {
@@ -393,13 +474,21 @@ body {
 }
 
 .guest-field input {
-    width: 114px;
-    height: 38px;
+    width: 36px;
+    height: 26px;
     margin-top: 30px;
+    padding: 6px 30px 6px 51px;
+    font-weight: 700;
+    line-height: 26px;
     background-color: var(--basic-beige);
     border: none;
 }
 
+.index-search-form input[type="number"]::-webkit-outer-spin-button,
+.index-search-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .guest-field .adults-label {
     padding-right: 38px;
@@ -415,6 +504,7 @@ body {
     height: 58px;
     margin-top: 54px;
     margin-left: 55px;
+    padding: 0;
     font-size:21px;
     font-weight: 700;
     text-transform: uppercase;
@@ -430,15 +520,6 @@ body {
 .index-search-form input[type="submit"]:active {
     background-color: var(--active-blue);
     color:rgba(255, 255, 255, 0.3);
-}
-
-.index-search-form input[type="date"]::-webkit-calendar-picker-indicator {
-    color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    display: block;
-    background: url("../img/calendar.svg") no-repeat;
-    width: 21px;
-    height: 23px;
 }
 
 /*Footer*/
@@ -680,40 +761,47 @@ body {
 }
 
 .price-controls {
+    position: relative;
     display: flex;
+    align-items: center;
     width: 313px;
+    height: 36px;
     padding: 0;
     margin-top: 10.5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
     border: 2px solid #FFFFFF;
     border-radius: 2px;
 }
 
-.price-controls-text {
+.price-controls input {
+    width: 60px;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    padding-top: 4px;
-    padding-bottom: 6px;
-    margin: 0;
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    border: none;
+}
+.price-controls .label-price-from {
+    margin-left: 65px;
 }
 
-.from {
-    width: 53px;
-    margin-left: 50px;
-}
-
-.to {
-    width: 83px;
-    margin-left: 37px;
+.price-controls .label-price-to {
+    margin-left: 67px;
 }
 
 .rectangle {
+    position: absolute;
+    top: 7px;
+    left: 159px;
     width: 2px;
     height: 22px;
-    margin-left: 48px;
+    justify-self: center;
     align-self: center;
-    background: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .range-controls {
